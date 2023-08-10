@@ -12,17 +12,29 @@
 </head>
 <body>
   <header class="head">
-    <nav class="menu">
-      <svg width="96" height="53" viewBox="0 0 96 53" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
+    <div class="barra-top">
+      <svg width="96" height="53" viewBox="0 0 96 53" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo" class="logo-responsive">
+        <path d="M0.30016 1.09091H12.3563L23.9649 23.0156H24.4621L36.0708 1.09091H48.1269L29.558 34.0028V52H18.8691V34.0028L0.30016 1.09091ZM95.8479 18.9141H84.9601C84.7613 17.5054 84.3553 16.2543 83.7421 15.1605C83.1289 14.0502 82.3418 13.1056 81.3806 12.3267C80.4194 11.5478 79.3091 10.9512 78.0496 10.5369C76.8067 10.1226 75.4561 9.91548 73.9978 9.91548C71.3628 9.91548 69.0676 10.5701 67.1121 11.8793C65.1566 13.1719 63.6403 15.0611 62.5631 17.5469C61.4859 20.0161 60.9474 23.0156 60.9474 26.5455C60.9474 30.1747 61.4859 33.224 62.5631 35.6932C63.6569 38.1624 65.1815 40.0268 67.137 41.2862C69.0925 42.5457 71.3546 43.1754 73.9232 43.1754C75.365 43.1754 76.699 42.9848 77.9253 42.6037C79.1682 42.2225 80.2703 41.6674 81.2314 40.9382C82.1926 40.1925 82.9881 39.2893 83.6178 38.2287C84.2641 37.1681 84.7116 35.9583 84.9601 34.5994L95.8479 34.6491C95.5662 36.9858 94.8619 39.2396 93.735 41.4105C92.6247 43.5649 91.1249 45.4955 89.2357 47.2024C87.3631 48.8928 85.1259 50.2351 82.5241 51.2294C79.9388 52.2071 77.0139 52.696 73.7492 52.696C69.2085 52.696 65.1483 51.6686 61.5688 49.6136C58.0058 47.5587 55.1886 44.584 53.1171 40.6896C51.0622 36.7952 50.0347 32.0805 50.0347 26.5455C50.0347 20.9938 51.0787 16.2708 53.1668 12.3764C55.2549 8.48201 58.0887 5.51562 61.6682 3.47727C65.2478 1.42235 69.2748 0.394884 73.7492 0.394884C76.699 0.394884 79.4334 0.809184 81.9523 1.63778C84.4878 2.46638 86.7333 3.67613 88.6888 5.26704C90.6443 6.84138 92.2352 8.77201 93.4616 11.0589C94.7045 13.3459 95.4999 15.9643 95.8479 18.9141Z" fill="#006796"/>
+      </svg>
+      <button class="menu-btn" id="abrir">
+        <img src="iconos/icon-menu.svg" alt="" class="icon-menu">
+      </button>
+    </div> 
+    <nav class="menu" id="nav">
+      <button class="boton-cerrar" id="cerrar"><img src="iconos/icon-cerrar.svg" alt="" class="icon-cerrar"></button>
+      <svg width="96" height="53" viewBox="0 0 96 53" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo" class="logo-desktop">
         <path d="M0.30016 1.09091H12.3563L23.9649 23.0156H24.4621L36.0708 1.09091H48.1269L29.558 34.0028V52H18.8691V34.0028L0.30016 1.09091ZM95.8479 18.9141H84.9601C84.7613 17.5054 84.3553 16.2543 83.7421 15.1605C83.1289 14.0502 82.3418 13.1056 81.3806 12.3267C80.4194 11.5478 79.3091 10.9512 78.0496 10.5369C76.8067 10.1226 75.4561 9.91548 73.9978 9.91548C71.3628 9.91548 69.0676 10.5701 67.1121 11.8793C65.1566 13.1719 63.6403 15.0611 62.5631 17.5469C61.4859 20.0161 60.9474 23.0156 60.9474 26.5455C60.9474 30.1747 61.4859 33.224 62.5631 35.6932C63.6569 38.1624 65.1815 40.0268 67.137 41.2862C69.0925 42.5457 71.3546 43.1754 73.9232 43.1754C75.365 43.1754 76.699 42.9848 77.9253 42.6037C79.1682 42.2225 80.2703 41.6674 81.2314 40.9382C82.1926 40.1925 82.9881 39.2893 83.6178 38.2287C84.2641 37.1681 84.7116 35.9583 84.9601 34.5994L95.8479 34.6491C95.5662 36.9858 94.8619 39.2396 93.735 41.4105C92.6247 43.5649 91.1249 45.4955 89.2357 47.2024C87.3631 48.8928 85.1259 50.2351 82.5241 51.2294C79.9388 52.2071 77.0139 52.696 73.7492 52.696C69.2085 52.696 65.1483 51.6686 61.5688 49.6136C58.0058 47.5587 55.1886 44.584 53.1171 40.6896C51.0622 36.7952 50.0347 32.0805 50.0347 26.5455C50.0347 20.9938 51.0787 16.2708 53.1668 12.3764C55.2549 8.48201 58.0887 5.51562 61.6682 3.47727C65.2478 1.42235 69.2748 0.394884 73.7492 0.394884C76.699 0.394884 79.4334 0.809184 81.9523 1.63778C84.4878 2.46638 86.7333 3.67613 88.6888 5.26704C90.6443 6.84138 92.2352 8.77201 93.4616 11.0589C94.7045 13.3459 95.4999 15.9643 95.8479 18.9141Z" fill="#006796"/>
       </svg>
       <ul>
         <li class="li-menu"><a href="#sobre-mi" class="a-menu">Sobre mi</a></li>
         <li class="li-menu"><a href="#projects" class="a-menu">Proyectos</a></li>
         <li class="li-menu"><a href="#contact" class="a-menu">Contacto</a></li>
-        <li class="li-lenguaje"><a href="">Es</a></li>
-        <li class="li-dark-mode"><img src="iconos/icon-dark-mode.svg" alt="Cambiar a tema oscuro" class="icon-dark-mode"></li>
-      </ul>      
+        <li class="li-lenguaje"><a href="" class="a-lenguaje">Es</a></li>
+        <button class="boton-dark-mode" id="switch" >
+          <span><img src="iconos/icon-sol.svg" alt="" class="icon-sol"></span>
+          <span><img src="iconos/icon-luna.svg" alt="" class="icon-luna"></span>
+        </button>
+      </ul>    
     </nav>
     <section id="sobre-mi">
       <div class="frase">
@@ -43,10 +55,13 @@
         <div class="foto">
           <img src="iconos/icon-person.svg" alt="" class="icon-person">
         </div>
-        <button>
-          <img src="iconos/icon-download.svg" alt="descargar" class="icon-download">
-          Curriculum
-        </button>
+        <div class="boton-perfil-git">
+          <button class="boton-curriculum">
+            <img src="iconos/icon-download.svg" alt="descargar" class="icon-download">
+            Curriculum
+          </button>
+          <a href=""><img src="iconos/icon-github.svg" alt="" class="icon-github-perfil"></a>
+        </div>
       </div>
     </section>
   </header>
@@ -54,29 +69,77 @@
     <section id="skills">
       <h2>Las <p class="p-blue">tecnologias que manejo</p></h2>
       <div class="technologies">
-        <img src="iconos/icon-html.svg" alt="" class="icon-html">
-        <img src="iconos/icon-css.svg" alt="" class="icon-css">
-        <img src="iconos/icon-javascript.svg" alt="" class="icon-javascript">
-        <img src="iconos/icon-git.svg" alt="" class="icon-git">
+        <div class="icon-container">
+          <img src="iconos/icon-html.svg" alt="" class="icon-tecno icons-technologies">
+          <p class="p-tecno p-html">HTML</p>
+        </div>
+        <div class="icon-container">
+          <img src="iconos/icon-css.svg" alt="" class="icon-tecno icons-technologies">
+          <p class="p-tecno p-css">CSS</p>
+        </div>
+        <div class="icon-container">
+          <img src="iconos/icon-javascript.svg" alt="" class="icon-tecno icons-technologies">
+          <p class="p-tecno p-javascript">JavaScript</p>
+        </div>
+        <div class="icon-container">
+          <img src="iconos/icon-git.svg" alt="" class="icon-tecno icons-technologies">
+          <p class="p-tecno p-git">Git</p>
+        </div>        
       </div>
     </section>
     <section id="projects">
       <h3>Mis <p class="p-blue">proyectos</p></h3>
-      <p class="p-projects">Proyecto 1</p>     
-      <article class="proyecto-1 proyectos"><p class="description-projects">Nombre y descripcion del pryecto</p><img src="iconos/icon-github.svg" alt="" class="icon-github"></article>
-      <p class="p-projects">Proyecto 2</p>
-      <article class="proyecto-2 proyectos"><p class="description-projects">Nombre y descripcion del pryecto</p><img src="iconos/icon-github.svg" alt="" class="icon-github"></article>
-      <p class="p-projects">Proyecto 3</p>
-      <article class="proyecto-3 proyectos"><p class="description-projects">Nombre y descripcion del pryecto</p><img src="iconos/icon-github.svg" alt="" class="icon-github"></article>
-      <p class="p-projects">Proyecto 4</p>
-      <article class="proyecto-4 proyectos"><p class="description-projects">Nombre y descripcion del pryecto</p><img src="iconos/icon-github.svg" alt="" class="icon-github"></article>
+      <div class="projects">
+        <div class="proyectos">   
+          <article class="proyecto-1">
+            <p class="p-projects">Proyecto 1</p> 
+            <p class="description-projects">Descripcion del proyecto</p>
+            <div class="icons-a">
+              <a href="" class="icons-proyectos"><img src="iconos/icon-github.svg" alt="" class="icon-github"></a>
+              <a href="" class="icons-proyectos"><img src="iconos/icon-link.svg" alt="" class="icon-link"></a>
+            </div>
+          </article>
+      </div>
+      <div class="proyectos">
+          <article class="proyecto-2">
+            <p class="p-projects">Proyecto 2</p>
+            <p class="description-projects">Descripcion del proyecto</p>
+            <div class="icons-a">
+              <a href="" class="icons-proyectos"><img src="iconos/icon-github.svg" alt="" class="icon-github"></a>
+              <a href="" class="icons-proyectos"><img src="iconos/icon-link.svg" alt="" class="icon-link"></a>
+            </div>
+          </article>
+      </div>
+      <div class="proyectos penultimo-proyecto">
+          <article class="proyecto-3">
+            <p class="p-projects">Proyecto 3</p>
+            <p class="description-projects">Descripcion del proyecto</p>
+            <div class="icons-a">
+              <a href="" class="icons-proyectos"><img src="iconos/icon-github.svg" alt="" class="icon-github"></a>
+              <a href="" class="icons-proyectos"><img src="iconos/icon-link.svg" alt="" class="icon-link"></a>
+            </div>
+          </article>
+      </div>
+      <div class="proyectos ultimo-proyecto">
+          <article class="proyecto-4">
+            <p class="p-projects">Proyecto 4</p>
+            <p class="description-projects">Descripcion del proyecto</p>
+            <div class="icons-a">
+              <a href="" class="icons-proyectos"><img src="iconos/icon-github.svg" alt="" class="icon-github"></a>
+              <a href="" class="icons-proyectos"><img src="iconos/icon-link.svg" alt="" class="icon-link"></a>
+            </div>
+          </article>
+      </div>
+      </div>
     </section>
     <section id="contact">
       <h4>Contactame por:</h4>
-      <a href=""><img src="iconos/icon-facebook.svg" alt="" class="icon-facebook"></a>
-      <a href=""><img src="iconos/icon-instagram.svg" alt="" class="icon-instagram"></a>
-      <a href=""><img src="iconos/icon-whatsapp.svg" alt="" class="icon-whatsapp"></a>
-      <a href=""><img src="iconos/icon-email.svg" alt="" class="icon-email"></a>
+      <div class="contact">
+        <a href="" class="icons-contact"><img src="iconos/icon-facebook.svg" alt="" class="icon-facebook"></a>
+        <a href="" class="icons-contact"><img src="iconos/icon-instagram.svg" alt="" class="icon-instagram"></a>
+        <a href="" class="icons-contact"><img src="iconos/icon-whatsapp.svg" alt="" class="icon-whatsapp"></a>
+        <a href="" class="icons-contact"><img src="iconos/icon-email.svg" alt="" class="icon-email"></a>
+      </div>
     </section>
   </main>
   <footer>
